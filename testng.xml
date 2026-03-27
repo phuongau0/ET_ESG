@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutoJava Test Suite" parallel="methods" thread-count="2">
+
+    <!-- Listeners for reporting and screenshots -->
+    <listeners>
+        <listener class-name="com.autojava.checkgenai.listeners.TestListener"/>
+        <listener class-name="com.autojava.checkgenai.listeners.ExtentReportListener"/>
+    </listeners>
+
+    <!-- Parameter browser dùng chung cho tất cả test -->
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Login Tests - Chrome">
+        <classes>
+            <class name="com.autojava.checkgenai.tests.QLChuDeTest"/>
+        </classes>
+    </test>
+    
+    <!-- Chạy cùng test trên Firefox (uncomment nếu cần) -->
+    <!--
+    <test name="Login Tests - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.autojava.checkgenai.tests.LoginTest"/>
+        </classes>
+    </test>
+    -->
+</suite>

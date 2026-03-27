@@ -1,0 +1,5 @@
+com\autojava\checkgenai\tests\LoginTest.class
+com\autojava\checkgenai\tests\QLChuDeTest.class
+com\autojava\checkgenai\listeners\ExtentReportListener.class
+com\autojava\checkgenai\tests\test\BaseTest.class
+com\autojava\checkgenai\listeners\TestListener.class

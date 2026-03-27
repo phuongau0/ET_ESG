@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [AutoJava Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.autojava.checkgenai.listeners.TestListener"/>
+    <listener class-name="com.autojava.checkgenai.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Login Tests - Chrome(failed)" verbose="0">
+    <classes>
+      <class name="com.autojava.checkgenai.tests.QLChuDeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="setupClass"/>
+          <include name="TC_1_verifyQLChuDePageIsDisplayed"/>
+        </methods>
+      </class> <!-- com.autojava.checkgenai.tests.QLChuDeTest -->
+    </classes>
+  </test> <!-- Login Tests - Chrome(failed) -->
+</suite> <!-- Failed suite [AutoJava Test Suite] -->
