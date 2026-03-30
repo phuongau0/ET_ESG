@@ -1,4 +1,4 @@
-# Created at 2026-03-27T17:42:34.727
+# Created at 2026-03-30T10:22:21.350
 Boot Manifest-JAR contains absolute paths in classpath 'D:\AuToJava\CheckGenAI\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

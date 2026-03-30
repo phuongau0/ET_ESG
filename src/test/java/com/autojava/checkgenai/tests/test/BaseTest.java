@@ -6,8 +6,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -37,7 +39,7 @@ public class BaseTest {
         WebDriverManager.firefoxdriver().setup();
     }
 
-    @BeforeMethod
+    @BeforeTest
     @Parameters("browser")
     public void setup(@Optional(DEFAULT_BROWSER) String browser) {
         driver = initDriver(browser);
@@ -80,13 +82,13 @@ public class BaseTest {
         loginFunc.open();
     }
 
-    @AfterMethod
+    @AfterTest
     public void teardown() {
-        // Don't quit driver here - let listeners handle screenshots first
-        // if (driver != null) {
-        //     driver.quit();
-        //     driver = null;
-        // }
+    //    Don't quit driver here - let listeners handle screenshots first
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
     }
     
     /**

@@ -11,7 +11,7 @@
     <!-- Parameter browser dùng chung cho tất cả test -->
     <parameter name="browser" value="chrome"/>
 
-    <test name="Login Tests - Chrome">
+    <test name="QL Chu De - Chrome">
         <classes>
             <class name="com.autojava.checkgenai.tests.QLChuDeTest"/>
         </classes>

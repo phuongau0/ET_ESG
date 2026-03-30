@@ -6,16 +6,16 @@
     <listener class-name="com.autojava.checkgenai.listeners.TestListener"/>
     <listener class-name="com.autojava.checkgenai.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="2" parallel="methods" name="Login Tests - Chrome(failed)" verbose="0">
+  <test thread-count="2" parallel="methods" name="QL Chu De - Chrome(failed)" verbose="0">
     <classes>
       <class name="com.autojava.checkgenai.tests.QLChuDeTest">
         <methods>
+          <include name="TC_2_VerifyColumnQLChuDe"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="setupClass"/>
-          <include name="TC_1_verifyQLChuDePageIsDisplayed"/>
         </methods>
       </class> <!-- com.autojava.checkgenai.tests.QLChuDeTest -->
     </classes>
-  </test> <!-- Login Tests - Chrome(failed) -->
+  </test> <!-- QL Chu De - Chrome(failed) -->
 </suite> <!-- Failed suite [AutoJava Test Suite] -->

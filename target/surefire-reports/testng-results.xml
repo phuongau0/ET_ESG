@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-27T17:42:35 GMT+07:00" name="AutoJava Test Suite" finished-at="2026-03-27T17:42:45 GMT+07:00" duration-ms="9920">
+  <suite started-at="2026-03-30T10:32:06 GMT+07:00" name="Surefire suite" finished-at="2026-03-30T10:32:19 GMT+07:00" duration-ms="12684">
     <groups>
     </groups>
-    <test started-at="2026-03-27T17:42:35 GMT+07:00" name="Login Tests - Chrome" finished-at="2026-03-27T17:42:45 GMT+07:00" duration-ms="9920">
+    <test started-at="2026-03-30T10:32:06 GMT+07:00" name="Surefire test" finished-at="2026-03-30T10:32:19 GMT+07:00" duration-ms="12684">
       <class name="com.autojava.checkgenai.tests.QLChuDeTest">
-        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.autojava.checkgenai.tests.QLChuDeTest@7b227d8d]" started-at="2026-03-27T17:42:36 GMT+07:00" name="setupClass" finished-at="2026-03-27T17:42:36 GMT+07:00" duration-ms="605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.autojava.checkgenai.tests.QLChuDeTest@7b227d8d]" started-at="2026-03-27T17:42:36 GMT+07:00" name="setup" finished-at="2026-03-27T17:42:40 GMT+07:00" duration-ms="3720" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.autojava.checkgenai.tests.QLChuDeTest@6328d34a]" started-at="2026-03-30T10:32:06 GMT+07:00" name="setup" finished-at="2026-03-30T10:32:11 GMT+07:00" duration-ms="4382" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,43 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_1_verifyQLChuDePageIsDisplayed()[pri:1, instance:com.autojava.checkgenai.tests.QLChuDeTest@7b227d8d]" started-at="2026-03-27T17:42:40 GMT+07:00" name="TC_1_verifyQLChuDePageIsDisplayed" description="Kiem tra trang QL Chu De duoc hien thi dung" finished-at="2026-03-27T17:42:45 GMT+07:00" duration-ms="4778" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Page title should be 'Quản lý chủ đề' expected [Quảnd lý chủ đề] but found [Quản lý chủ đề]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Page title should be 'Quản lý chủ đề' expected [Quảnd lý chủ đề] but found [Quản lý chủ đề]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at com.autojava.checkgenai.tests.QLChuDeTest.TC_1_verifyQLChuDePageIsDisplayed(QLChuDeTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-at java.base/java.lang.Thread.run(Thread.java:1516)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.autojava.checkgenai.tests.QLChuDeTest@6328d34a]" started-at="2026-03-30T10:32:11 GMT+07:00" name="setupClass" finished-at="2026-03-30T10:32:11 GMT+07:00" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method signature="TC_1_verifyQLChuDePageIsDisplayed()[pri:1, instance:com.autojava.checkgenai.tests.QLChuDeTest@6328d34a]" started-at="2026-03-30T10:32:11 GMT+07:00" name="TC_1_verifyQLChuDePageIsDisplayed" description="Kiem tra trang QL Chu De duoc hien thi dung" finished-at="2026-03-30T10:32:16 GMT+07:00" duration-ms="4803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_1_verifyQLChuDePageIsDisplayed -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.autojava.checkgenai.tests.QLChuDeTest@7b227d8d]" started-at="2026-03-27T17:42:45 GMT+07:00" name="teardown" finished-at="2026-03-27T17:42:45 GMT+07:00" duration-ms="1" status="PASS">
+        <test-method signature="TC_2_VerifyColumnQLChuDe()[pri:2, instance:com.autojava.checkgenai.tests.QLChuDeTest@6328d34a]" started-at="2026-03-30T10:32:16 GMT+07:00" name="TC_2_VerifyColumnQLChuDe" description="Kiem tra cac column duoc hien thi dung" finished-at="2026-03-30T10:32:18 GMT+07:00" duration-ms="2462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_2_VerifyColumnQLChuDe -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.autojava.checkgenai.tests.QLChuDeTest@6328d34a]" started-at="2026-03-30T10:32:18 GMT+07:00" name="teardown" finished-at="2026-03-30T10:32:19 GMT+07:00" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.autojava.checkgenai.tests.QLChuDeTest -->
-    </test> <!-- Login Tests - Chrome -->
-  </suite> <!-- AutoJava Test Suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

@@ -1,15 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.16 s <<< FAILURE! -- in TestSuite
-com.autojava.checkgenai.tests.QLChuDeTest.TC_1_verifyQLChuDePageIsDisplayed -- Time elapsed: 5.247 s <<< FAILURE!
-java.lang.AssertionError: Page title should be 'Quản lý chủ đề' expected [Quảnd lý chủ đề] but found [Quản lý chủ đề]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.autojava.checkgenai.tests.QLChuDeTest.TC_1_verifyQLChuDePageIsDisplayed(QLChuDeTest.java:28)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.001 s <<< FAILURE! -- in TestSuite
+com.autojava.checkgenai.tests.QLChuDeTest.TC_2_VerifyColumnQLChuDe -- Time elapsed: 2.697 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.autojava.checkgenai.pages.Func.Func_QuanLychude.verifyColumnByIndex(int, String)" because "this.QLChuDeFunc" is null
+	at com.autojava.checkgenai.tests.QLChuDeTest.TC_2_VerifyColumnQLChuDe(QLChuDeTest.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
