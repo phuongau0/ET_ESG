@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,21 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_2_VerifyColumnQLChuDe">TC_2_VerifyColumnQLChuDe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_3_VerifyAddNewTopicForm">TC_3_VerifyAddNewTopicForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_4_VerifyMaChuDeWhenInputValidData">TC_4_VerifyMaChuDeWhenInputValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_5_VerifyMaChuDeWhenInputInvalidData">TC_5_VerifyMaChuDeWhenInputInvalidData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -145,6 +160,33 @@
                   <span class="method-name">TC_2_VerifyColumnQLChuDe</span>
                   <em>
 (Kiem tra cac column duoc hien thi dung)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_3_VerifyAddNewTopicForm">
+                  </a> <!-- TC_3_VerifyAddNewTopicForm -->
+                  <span class="method-name">TC_3_VerifyAddNewTopicForm</span>
+                  <em>
+(Kiem tra khi click vao form them moi)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_4_VerifyMaChuDeWhenInputValidData">
+                  </a> <!-- TC_4_VerifyMaChuDeWhenInputValidData -->
+                  <span class="method-name">TC_4_VerifyMaChuDeWhenInputValidData</span>
+                  <em>
+(Kiem tra khi nhap du lieu hop le vao ma chu de)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_5_VerifyMaChuDeWhenInputInvalidData">
+                  </a> <!-- TC_5_VerifyMaChuDeWhenInputInvalidData -->
+                  <span class="method-name">TC_5_VerifyMaChuDeWhenInputInvalidData</span>
+                  <em>
+(Kiem tra khi nhap du lieu khong hop le vao ma chu de)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,20 +242,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_1_verifyQLChuDePageIsDisplayed')
 data.setCell(0, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(0, 3, 4803);
+data.setCell(0, 3, 7528);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_2_VerifyColumnQLChuDe')
+data.setCell(1, 1, 'TC_3_VerifyAddNewTopicForm')
 data.setCell(1, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(1, 3, 2462);
+data.setCell(1, 3, 4344);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_5_VerifyMaChuDeWhenInputInvalidData')
+data.setCell(2, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
+data.setCell(2, 3, 3302);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_2_VerifyColumnQLChuDe')
+data.setCell(3, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
+data.setCell(3, 3, 2424);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_4_VerifyMaChuDeWhenInputValidData')
+data.setCell(4, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
+data.setCell(4, 3, 2173);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -246,19 +300,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setupClass</span>
-                <span class="method-start">4398 ms</span>
+                <span class="method-start">2288 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC_1_verifyQLChuDePageIsDisplayed</span>
-                <span class="method-start">4876 ms</span>
+                <span class="method-start">2551 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_2_VerifyColumnQLChuDe</span>
-                <span class="method-start">9683 ms</span>
+                <span class="method-start">10083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_3_VerifyAddNewTopicForm</span>
+                <span class="method-start">12508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_4_VerifyMaChuDeWhenInputValidData</span>
+                <span class="method-start">16853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_5_VerifyMaChuDeWhenInputInvalidData</span>
+                <span class="method-start">19027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12147 ms</span>
+                <span class="method-start">22333 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

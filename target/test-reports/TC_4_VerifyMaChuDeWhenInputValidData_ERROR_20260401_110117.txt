@@ -1,0 +1,25 @@
+=== TEST FAILURE REPORT ===
+Test Class: com.autojava.checkgenai.tests.QLChuDeTest
+Test Method: TC_4_VerifyMaChuDeWhenInputValidData
+Failure Time: Wed Apr 01 11:01:17 GMT+07:00 2026
+Test Parameters: []
+
+=== EXCEPTION DETAILS ===
+Exception Type: java.lang.NullPointerException
+Exception Message: Cannot invoke "com.autojava.checkgenai.pages.Func.Func_QuanLychude.verifyMaChuDewheninputValiddata()" because "this.QLChuDeFunc" is null
+
+=== STACK TRACE ===
+com.autojava.checkgenai.tests.QLChuDeTest.TC_4_VerifyMaChuDeWhenInputValidData(QLChuDeTest.java:65)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)

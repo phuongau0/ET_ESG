@@ -1,0 +1,57 @@
+=== TEST FAILURE REPORT ===
+Test Class: com.autojava.checkgenai.tests.QLChuDeTest
+Test Method: TC_1_verifyQLChuDePageIsDisplayed
+Failure Time: Wed Apr 01 11:03:04 ICT 2026
+Test Parameters: []
+
+=== EXCEPTION DETAILS ===
+Exception Type: org.openqa.selenium.InvalidSelectorException
+Exception Message: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: unknown
+
+=== STACK TRACE ===
+org.openqa.selenium.By$ByClassName.<init>(By.java:309)
+org.openqa.selenium.By.className(By.java:100)
+org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:42)
+org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:83)
+org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:58)
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:46)
+org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
+org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
+org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
+org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
+org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
+org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
+com.autojava.checkgenai.pages.UI.UI_QuanLychude.<init>(UI_QuanLychude.java:79)
+com.autojava.checkgenai.pages.Func.Func_QuanLychude.<init>(Func_QuanLychude.java:21)
+com.autojava.checkgenai.tests.QLChuDeTest.TC_1_verifyQLChuDePageIsDisplayed(QLChuDeTest.java:35)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+java.base/java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(Unknown Source)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+com.microsoft.java.test.runner.testng.TestNGRunner.run(TestNGRunner.java:45)
+com.microsoft.java.test.runner.testng.TestNGLauncher.execute(TestNGLauncher.java:32)
+com.microsoft.java.test.runner.Launcher.main(Launcher.java:57)

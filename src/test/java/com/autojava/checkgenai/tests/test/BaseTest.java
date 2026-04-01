@@ -44,9 +44,9 @@ public class BaseTest {
     public void setup(@Optional(DEFAULT_BROWSER) String browser) {
         driver = initDriver(browser);
         configDriver();
-        loginFunc = new Func_LoginPage(driver);
-        openLoginPage(); 
-        loginFunc.loginAs("admin","GREENFEED@2026");// Skip opening page to avoid browser issues
+        // loginFunc = new Func_LoginPage(driver);
+        // openLoginPage(); 
+        // loginFunc.loginAs("admin","GREENFEED@2026");// Skip opening page to avoid browser issues
     }
 
     /**
@@ -87,8 +87,10 @@ public class BaseTest {
     //    Don't quit driver here - let listeners handle screenshots first
         if (driver != null) {
             driver.quit();
-            driver = null;
+          driver = null;
         }
+
+        
     }
     
     /**

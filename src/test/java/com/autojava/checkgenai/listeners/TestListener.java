@@ -40,8 +40,8 @@ public class TestListener implements ITestListener {
         // Ghi lý do lỗi chi tiết
         logFailureDetails(result);
 
-        // Quit driver after capturing screenshot
-        quitDriver(result);
+        // Không tự động đóng driver ở đây; việc quản lý lifecycle do test hoặc framework đảm nhiệm
+        System.out.println("ℹ️ Driver is not quit automatically after test failure per config/process.");
     }
 
     @Override
