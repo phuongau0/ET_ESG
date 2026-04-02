@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_13_VerifyClickIconHuy">TC_13_VerifyClickIconHuy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +132,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_13_VerifyToggleStatus">TC_13_VerifyToggleStatus</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_14_VerifyHuyPopupConfirm">TC_14_VerifyHuyPopupConfirm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.autojava.checkgenai.tests.QLChuDeTest" class="method navigator-link" hash-for-method="TC_15_VerifyXacNhanPopupConfirm">TC_15_VerifyXacNhanPopupConfirm</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -178,6 +197,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.autojava.checkgenai.tests.QLChuDeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_13_VerifyClickIconHuy">
+                  </a> <!-- TC_13_VerifyClickIconHuy -->
+                  <span class="method-name">TC_13_VerifyClickIconHuy</span>
+                  <div class="stack-trace">java.lang.AssertionError: Content of confirm popup should be correct expected [Bạn có xác nhận hủy thêm mới?] but found [Sau khi xác nhận, dữ liệu đã nhập sẽ không được lưu]
+	at com.autojava.checkgenai.tests.QLChuDeTest.TC_13_VerifyClickIconHuy(QLChuDeTest.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Kiem tra khi click vao icon Huy trên form them moi)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -213,11 +254,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_13_VerifyToggleStatus">
-                  </a> <!-- TC_13_VerifyToggleStatus -->
-                  <span class="method-name">TC_13_VerifyToggleStatus</span>
+                  <a name="TC_14_VerifyHuyPopupConfirm">
+                  </a> <!-- TC_14_VerifyHuyPopupConfirm -->
+                  <span class="method-name">TC_14_VerifyHuyPopupConfirm</span>
                   <em>
-(Them moi chu de thanh cong)                  </em>
+(Kiem tra khi click vao nut Huy trong popup confirm khi click vao icon Huy tren form them moi)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_15_VerifyXacNhanPopupConfirm">
+                  </a> <!-- TC_15_VerifyXacNhanPopupConfirm -->
+                  <span class="method-name">TC_15_VerifyXacNhanPopupConfirm</span>
+                  <em>
+(Kiem tra khi click vao nut Xac Nhan trong popup confirm khi click vao icon Huy tren form them moi)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -354,59 +404,67 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_13_VerifyToggleStatus')
+data.setCell(0, 1, 'TC_15_VerifyXacNhanPopupConfirm')
 data.setCell(0, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(0, 3, 19844);
+data.setCell(0, 3, 35410);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_12_VerifyMaChuDeTrung')
+data.setCell(1, 1, 'TC_14_VerifyHuyPopupConfirm')
 data.setCell(1, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(1, 3, 12396);
+data.setCell(1, 3, 12639);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_1_verifyQLChuDePageIsDisplayed')
+data.setCell(2, 1, 'TC_12_VerifyMaChuDeTrung')
 data.setCell(2, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(2, 3, 6746);
+data.setCell(2, 3, 12413);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_3_VerifyAddNewTopicForm')
+data.setCell(3, 1, 'TC_1_verifyQLChuDePageIsDisplayed')
 data.setCell(3, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(3, 3, 4351);
+data.setCell(3, 3, 7298);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TC10_GetFirstTruCot')
 data.setCell(4, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(4, 3, 4178);
+data.setCell(4, 3, 4367);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_11_VerifyEmptyTruCot')
+data.setCell(5, 1, 'TC_3_VerifyAddNewTopicForm')
 data.setCell(5, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(5, 3, 4175);
+data.setCell(5, 3, 4322);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_8_VerifyInvalidTenChuDe')
+data.setCell(6, 1, 'TC_11_VerifyEmptyTruCot')
 data.setCell(6, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(6, 3, 3682);
+data.setCell(6, 3, 4199);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_5_VerifyMaChuDeWhenInputInvalidData')
+data.setCell(7, 1, 'TC_9_VerifyInvalidTenChuDe')
 data.setCell(7, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(7, 3, 3292);
+data.setCell(7, 3, 3377);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_6_VerifyEmptyMaChuDe')
+data.setCell(8, 1, 'TC_8_VerifyInvalidTenChuDe')
 data.setCell(8, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(8, 3, 3140);
+data.setCell(8, 3, 3296);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_9_VerifyInvalidTenChuDe')
+data.setCell(9, 1, 'TC_5_VerifyMaChuDeWhenInputInvalidData')
 data.setCell(9, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(9, 3, 3132);
+data.setCell(9, 3, 3292);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_2_VerifyColumnQLChuDe')
+data.setCell(10, 1, 'TC_6_VerifyEmptyMaChuDe')
 data.setCell(10, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(10, 3, 2333);
+data.setCell(10, 3, 3145);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC_4_VerifyMaChuDeWhenInputValidData')
+data.setCell(11, 1, 'TC_13_VerifyClickIconHuy')
 data.setCell(11, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(11, 3, 2164);
+data.setCell(11, 3, 2692);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC_7_VerifyValidTenChuDe')
+data.setCell(12, 1, 'TC_2_VerifyColumnQLChuDe')
 data.setCell(12, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
-data.setCell(12, 3, 2142);
+data.setCell(12, 3, 2374);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC_7_VerifyValidTenChuDe')
+data.setCell(13, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
+data.setCell(13, 3, 2152);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC_4_VerifyMaChuDeWhenInputValidData')
+data.setCell(14, 2, 'com.autojava.checkgenai.tests.QLChuDeTest')
+data.setCell(14, 3, 2137);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -444,63 +502,73 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setupClass</span>
-                <span class="method-start">2153 ms</span>
+                <span class="method-start">2308 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC_1_verifyQLChuDePageIsDisplayed</span>
-                <span class="method-start">2411 ms</span>
+                <span class="method-start">2542 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_2_VerifyColumnQLChuDe</span>
-                <span class="method-start">9160 ms</span>
+                <span class="method-start">9843 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_3_VerifyAddNewTopicForm</span>
-                <span class="method-start">11494 ms</span>
+                <span class="method-start">12219 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_4_VerifyMaChuDeWhenInputValidData</span>
-                <span class="method-start">15846 ms</span>
+                <span class="method-start">16542 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_5_VerifyMaChuDeWhenInputInvalidData</span>
-                <span class="method-start">18011 ms</span>
+                <span class="method-start">18680 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_6_VerifyEmptyMaChuDe</span>
-                <span class="method-start">21304 ms</span>
+                <span class="method-start">21973 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_7_VerifyValidTenChuDe</span>
-                <span class="method-start">24445 ms</span>
+                <span class="method-start">25119 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_8_VerifyInvalidTenChuDe</span>
-                <span class="method-start">26588 ms</span>
+                <span class="method-start">27272 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_9_VerifyInvalidTenChuDe</span>
-                <span class="method-start">30271 ms</span>
+                <span class="method-start">30569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC10_GetFirstTruCot</span>
-                <span class="method-start">33404 ms</span>
+                <span class="method-start">33947 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_11_VerifyEmptyTruCot</span>
-                <span class="method-start">37582 ms</span>
+                <span class="method-start">38315 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_12_VerifyMaChuDeTrung</span>
-                <span class="method-start">41758 ms</span>
+                <span class="method-start">42515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC_13_VerifyToggleStatus</span>
-                <span class="method-start">54155 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_13_VerifyClickIconHuy</span>
+                <span class="method-start">54929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_14_VerifyHuyPopupConfirm</span>
+                <span class="method-start">57864 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_15_VerifyXacNhanPopupConfirm</span>
+                <span class="method-start">70504 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">74000 ms</span>
+                <span class="method-start">105915 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

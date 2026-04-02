@@ -6,7 +6,7 @@ import com.autojava.checkgenai.pages.Func.Func_HomePage;
 import com.autojava.checkgenai.pages.Func.Func_LoginPage;
 import com.autojava.checkgenai.pages.Func.Func_QuanLychude;
 import com.autojava.checkgenai.tests.test.BaseTest;
-
+import com.beust.ah.A;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -135,9 +135,39 @@ public class QLChuDeTest extends BaseTest {
                 "Notification message should be 'Mã chủ đề đã được sử dụng'");
     }
 
-    @Test(priority = 13, description = "Them moi chu de thanh cong")
-    public void TC_13_VerifyToggleStatus() throws InterruptedException {
+    @Test(priority = 13, description = "Kiem tra khi click vao icon Huy trên form them moi")
+    public void TC_13_VerifyClickIconHuy() throws InterruptedException {
+        Thread.sleep(2000);
+        QLChuDeFunc.clickbuttonHuy();
+        Assert.assertEquals(QLChuDeFunc.VerifyTitlePopupConfirm(), "Bạn có xác nhận hủy thêm mới?",
+                "Title of confirm popup should be correct");
+        Assert.assertEquals(QLChuDeFunc.VerifyContentPopupConfirm(),
+                "Sau khi xác nhận, dữ liệu đã nhập sẽ không được lưu",
+                "Content of confirm popup should be correct");
+        Thread.sleep(2000);
 
+    }
+
+    @Test(priority = 14, description = "Kiem tra khi click vao nut Huy trong popup confirm khi click vao icon Huy tren form them moi")
+    public void TC_14_VerifyHuyPopupConfirm() throws InterruptedException {
+        Thread.sleep(2000);
+        QLChuDeFunc.clickIconHuyConfirm();
+        Assert.assertTrue(QLChuDeFunc.VerifyPopupConfirmClosed(), "Popup confirm should be closed after clicking Hủy");
+    }
+
+    @Test(priority = 15, description = "Kiem tra khi click vao nut Xac Nhan trong popup confirm khi click vao icon Huy tren form them moi")
+    public void TC_15_VerifyXacNhanPopupConfirm() throws InterruptedException {
+        Thread.sleep(2000);
+        QLChuDeFunc.clickbuttonHuy();
+        Thread.sleep(2000);
+        QLChuDeFunc.clickIconXacNhanConfirm();
+        Assert.assertFalse(QLChuDeFunc.verifyAddNewTopicForm(), "Add new topic form should be  not displayed");
+    }
+
+    @Test(priority = 16, description = "Them moi chu de thanh cong")
+    public void TC_16_VerifyAddNewTopicSuccess() throws InterruptedException {
+
+        QLChuDeFunc.clickAddButton();
         Thread.sleep(2000);
         QLChuDeFunc.RandomMaChuDe();
         Thread.sleep(2000);
@@ -154,15 +184,69 @@ public class QLChuDeTest extends BaseTest {
         Assert.assertTrue(QLChuDeFunc.VerifyMessageThemMoiChuDeThanhCong(),
                 "Message 'Thêm mới chủ đề thành công' should be displayed");
         Thread.sleep(2000);
-        Assert.assertEquals(QLChuDeFunc.GetTextMaChuDeRecord(), Machude, "Mã chủ đề in record should match input");
+        Assert.assertEquals(QLChuDeFunc.GetTextMaChuDeRecord(), Machude,
+                "Mã chủ đề in record should match input");
         Thread.sleep(2000);
 
-        Assert.assertEquals(QLChuDeFunc.GetTextTenChuDeRecord(), Tenchude, "Tên chủ đề in record should match input");
+        Assert.assertEquals(QLChuDeFunc.GetTextTenChuDeRecord(), Tenchude,
+                "Tên chủ đề in record should match input");
         Thread.sleep(2000);
+
+        Assert.assertEquals(QLChuDeFunc.GetTextTruCotRecord(), TruCot,
+                "Trụ cột in record should match input");
+
+    }
+
+    @Test(priority = 17, description = "Kiem tra chuc nang sua chu de")
+    public void TC_17_VerifyWhenClickEdit() throws InterruptedException {
+        QLChuDeFunc.clickEditByMa(QLChuDeFunc.GetTextMaChuDeRecord());
+        Thread.sleep(2000);
+        Assert.assertTrue(QLChuDeFunc.verifyEditTopicForm(),
+                "Edit topic form should be displayed");
+        Assert.assertEquals(QLChuDeFunc.GetTextMaChuDeInput(),
+                QLChuDeFunc.GetTextMaChuDeRecord(),
+                "Mã chủ đề in edit form should match record");
+        Assert.assertEquals(QLChuDeFunc.GetTextTenChuDeInput(),
+                QLChuDeFunc.GetTextTenChuDeRecord(),
+                "Tên chủ đề in edit form should match record");
+        Assert.assertEquals(QLChuDeFunc.GetTextTruCotInput(),
+                QLChuDeFunc.GetTextTruCotRecord(),
+                "Trụ cột in edit form should match record");
+        Assert.assertTrue(QLChuDeFunc.CheckDisabledMaChuDe(),
+                "Mã chủ đề field should be disabled in edit form");
+    }
+
+
+    @Test(priority = 18, description = "Kiem tra chuc nang update chu de")
+    public void TC_18_VerifyUpdateChuDeSuccess() throws InterruptedException {
+        QLChuDeFunc.RandomTenChuDeforUpdate();
+        Thread.sleep(2000);
+        QLChuDeFunc.RandomTruCotforUpdate(); 
+        Thread.sleep(2000);
+        Thread.sleep(2000);
+        String Machude = QLChuDeFunc.GetTextMaChuDeInput();
+        String Tenchude = QLChuDeFunc.GetTextTenChuDeInput();
+        String TruCot = QLChuDeFunc.GetTextTruCotInput();
+
+        QLChuDeFunc.clickbuttonLuu();
+        Thread.sleep(2000);
+
+          Assert.assertTrue(QLChuDeFunc.VerifyMessageCapNhatChuDeThanhCong(),
+                "Message 'Cập nhật chủ đề thành công' should be displayed");
+        Thread.sleep(2000);
+        Assert.assertEquals(QLChuDeFunc.GetTextMaChuDeRecord(), Machude,
+                "Mã chủ đề in record should match input");
+        Thread.sleep(2000);
+
+        Assert.assertEquals(QLChuDeFunc.GetTextTenChuDeRecord(), Tenchude,
+                "Tên chủ đề in record should match input");
+        Thread.sleep(2000);
+
+        Assert.assertEquals(QLChuDeFunc.GetTextTruCotRecord(), TruCot,
+                "Trụ cột in record should match input");
+
 
     
-        Assert.assertEquals(QLChuDeFunc.GetTextTruCotRecord(), TruCot, "Trụ cột in record should match input");
-
     }
 
 }

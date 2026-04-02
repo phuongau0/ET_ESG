@@ -1,0 +1,63 @@
+=== TEST FAILURE REPORT ===
+Test Class: com.autojava.checkgenai.tests.QLChuDeTest
+Test Method: TC_13_VerifyClickIconHuy
+Failure Time: Thu Apr 02 15:49:04 ICT 2026
+Test Parameters: []
+
+=== EXCEPTION DETAILS ===
+Exception Type: org.openqa.selenium.ElementClickInterceptedException
+Exception Message: element click intercepted: Element <button type="button" class="ant-btn css-1t2537o css-var-_r_0_ ant-btn-default ant-btn-color-default ant-btn-variant-outlined min-w-27">...</button> is not clickable at point (1718, 867). Other element would receive the click: <div class="ant-modal-wrap ant-modal-centered" style="z-index: 1200;">...</div>
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c336769c584f6cf71a04e66e9b773ae6, clickElement {id=f.6E1D0C4B90C63650DEC5E12D308F7779.d.5D634105480D07BA9839E380160A9062.e.83}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55229}, goog:processID: 16652, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55229/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c336769c584f6cf71a04e66e9b773ae6)] -> xpath: //button[.='Hủy']]
+Session ID: c336769c584f6cf71a04e66e9b773ae6
+
+=== STACK TRACE ===
+java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+java.base/java.lang.reflect.Method.invoke(Unknown Source)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+com.autojava.checkgenai.pages.Func.Func_QuanLychude.clickbuttonHuy(Func_QuanLychude.java:65)
+com.autojava.checkgenai.tests.QLChuDeTest.TC_13_VerifyClickIconHuy(QLChuDeTest.java:181)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+java.base/java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(Unknown Source)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+com.microsoft.java.test.runner.testng.TestNGRunner.run(TestNGRunner.java:45)
+com.microsoft.java.test.runner.testng.TestNGLauncher.execute(TestNGLauncher.java:32)
+com.microsoft.java.test.runner.Launcher.main(Launcher.java:57)

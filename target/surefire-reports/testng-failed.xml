@@ -5,10 +5,10 @@
     <classes>
       <class name="com.autojava.checkgenai.tests.QLChuDeTest">
         <methods>
+          <include name="TC_13_VerifyClickIconHuy"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="setupClass"/>
-          <include name="TC_13_VerifyToggleStatus"/>
         </methods>
       </class> <!-- com.autojava.checkgenai.tests.QLChuDeTest -->
     </classes>

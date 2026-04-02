@@ -2,6 +2,7 @@ package com.autojava.checkgenai.pages.UI;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -27,9 +28,17 @@ public class UI_QuanLychude {
   @FindBy(xpath = "//span[contains(text(),'Thêm mới')]")
   public WebElement addButton;
 
+
+
+  
   // Form thêm mới chủ đề
   @FindBy(xpath = "//div[contains(text(), 'Thêm mới')]")
   public WebElement addNewTopicFormTitle;
+
+  
+  // Form thêm mới chủ đề
+  @FindBy(xpath = "//div[contains(text(), 'Chỉnh sửa')]")
+  public WebElement EditTopicFormTitle;
 
   // Label Mã chủ đề
   @FindBy(xpath = "//label[contains(text(),'Mã chủ đề')]")
@@ -59,6 +68,7 @@ public class UI_QuanLychude {
   @FindBy(id="pillarId")
   public WebElement selectTruCot;
 
+  // Text sau khi chọn trụ cột
   @FindBy(xpath =  "//input[@id='pillarId']/parent::div")
 public WebElement selectedTruCotText;
 
@@ -78,20 +88,26 @@ public WebElement selectedTruCotText;
   @FindBy(xpath = "//button[.='Lưu' and not(@disabled)]")
   public WebElement buttonLuuEnabled;
 
+  // Message bỏ trống Mã chủ đề
   @FindBy(xpath = "//input[@id='code'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]")
   public WebElement errorEmptyMaChuDe;
 
+
+  // Message bỏ trống Mã chủ đề
   @FindBy(xpath = "//input[@id='name'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]")
   public WebElement errorEmptyTenChuDe;
 
 
+  // Icon clear trong select trụ cột
   @FindBy(xpath="//div[@class='ant-select-clear']//span[@aria-label='close-circle']//*[name()='svg']")
   public WebElement clearTruCotSelect;
 
+  // Message bỏ trống Trụ cột
   @FindBy(xpath = "//input[@id='pillarId'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]")
   public WebElement errorEmptyTrucot;
 
 
+  // Record đầu tiên sau khi thêm mới thành công
   @FindBy(xpath="(//tbody/tr[not(contains(@class,'measure-row'))])[1]/td[1]")
   public WebElement MaChuDeRecord;
 
@@ -103,9 +119,12 @@ public WebElement selectedTruCotText;
 
 
 
+  // Icon đóng popup
+
   @FindBy(xpath="//*[name()='path' and contains(@d,'M799.86 16')]")
   public WebElement iconClosePopup;
 
+  // Noti Error message khi mã chủ đề bị trùng
 @FindBy(xpath = "//div[@class='ant-notification-notice-description']")
 public WebElement NotificationMessage;
 
@@ -114,9 +133,39 @@ public WebElement NotificationMessage;
 @FindBy(xpath = "//span[contains(text(),'Thêm mới chủ đề thành công')]")
 public WebElement MessageThemMoiChuDeThanhCong;
 
+
+
+@FindBy(xpath = "//span[contains(text(),'Cập nhật chủ đề thành công')]")
+public WebElement MessageCapNhatChuDeThanhCong;
+
   public UI_QuanLychude(WebDriver driver) {
     PageFactory.initElements(driver, this);
   }
+
+
+  @FindBy(xpath="//div[@class='text-base font-semibold py-2']")
+  public WebElement TitlePopupHuy;
+
+  @FindBy(xpath="//div[@class='text-[#535862]']")
+  public WebElement ContentPopupHuy;
+
+  @FindBy(xpath="//button[.='Xác nhận']")
+  public WebElement buttonXacNhanPopupHuy;
+
+
+
+  @FindBy(xpath="  //div[@role='dialog' and .//text()[contains(.,'Bạn có xác nhận')]] //button[normalize-space()='Hủy']")
+  public WebElement buttonHuyPopupHuy;
+
+
+
+
+
+
+    // ===== DYNAMIC ELEMENT dùng để edit mã chủ đề =====
+    public By btnEditByMa(String ma) {
+        return By.xpath("//td[normalize-space()='" + ma + "']/ancestor::tr//button[.//span[contains(@aria-label,'edit')]]");
+    }
 
 
 
