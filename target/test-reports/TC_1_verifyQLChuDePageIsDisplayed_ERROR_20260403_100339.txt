@@ -1,0 +1,81 @@
+=== TEST FAILURE REPORT ===
+Test Class: com.autojava.checkgenai.tests.QLChuDeTest
+Test Method: TC_1_verifyQLChuDePageIsDisplayed
+Failure Time: Fri Apr 03 10:03:39 GMT+07:00 2026
+Test Parameters: []
+
+=== EXCEPTION DETAILS ===
+Exception Type: org.openqa.selenium.TimeoutException
+Exception Message: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (eac08b1cd17d5967e44d2f0580c0e0f0)] -> xpath: //li[@title='Quản lý chủ đề']] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51094}, goog:processID: 8576, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51094/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eac08b1cd17d5967e44d2f0580c0e0f0
+
+=== STACK TRACE ===
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+com.autojava.checkgenai.pages.Func.Func_HomePage.clickQLChuDe(Func_HomePage.java:34)
+com.autojava.checkgenai.tests.QLChuDeTest.TC_1_verifyQLChuDePageIsDisplayed(QLChuDeTest.java:41)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:137)
+org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:148)
+org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:88)
+org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
+org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1177)
+org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1055)
+org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:871)
+org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:342)
+org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:330)
+org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:213)
+org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:175)
+org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:76)
+org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:163)
+org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:160)
+org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+org.apache.maven.cli.MavenCli.execute(MavenCli.java:910)
+org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
+org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:283)
+org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:226)
+org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:407)
+org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:348)

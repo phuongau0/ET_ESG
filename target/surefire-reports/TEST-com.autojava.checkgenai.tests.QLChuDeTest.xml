@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.autojava.checkgenai.tests.QLChuDeTest" time="107.074" tests="15" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.autojava.checkgenai.tests.QLChuDeTest" time="277.414" tests="31" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="webdriver.chrome.driver" value="C:\Users\ASUS\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\AuToJava\CheckGenAI\target\test-classes;D:\AuToJava\CheckGenAI\target\classes;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\ASUS\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\ASUS\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ASUS\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ASUS\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ASUS\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\ASUS\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\ASUS\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\ASUS\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ASUS\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ASUS\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\ASUS\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\ASUS\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\ASUS\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\ASUS\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\ASUS\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ASUS\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\ASUS\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\ASUS\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ASUS\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\ASUS\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
+    <property name="java.class.path" value="D:\AuToJava\CheckGenAI\target\test-classes;D:\AuToJava\CheckGenAI\target\classes;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\ASUS\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\ASUS\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ASUS\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ASUS\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ASUS\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\ASUS\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\ASUS\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\ASUS\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ASUS\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\ASUS\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\ASUS\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\ASUS\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\ASUS\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\ASUS\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ASUS\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\ASUS\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\ASUS\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ASUS\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\ASUS\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\ASUS\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\ASUS\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\ASUS\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,10 +16,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26\bin"/>
-    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire6590686819325841938\surefirebooter-20260402162238878_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire6590686819325841938 2026-04-02T16-22-38_727-jvmRun1 surefire-20260402162238878_1tmp surefire_0-20260402162238878_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire1893420468192426296\surefirebooter-20260403135934530_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire1893420468192426296 2026-04-03T13-59-34_359-jvmRun1 surefire-20260403135934530_1tmp surefire_0-20260403135934530_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="QLChuDeTest"/>
-    <property name="surefire.test.class.path" value="D:\AuToJava\CheckGenAI\target\test-classes;D:\AuToJava\CheckGenAI\target\classes;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\ASUS\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\ASUS\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ASUS\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ASUS\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ASUS\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\ASUS\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\ASUS\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\ASUS\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ASUS\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ASUS\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\ASUS\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\ASUS\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\ASUS\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\ASUS\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\ASUS\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ASUS\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\ASUS\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\ASUS\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ASUS\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\ASUS\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
+    <property name="surefire.test.class.path" value="D:\AuToJava\CheckGenAI\target\test-classes;D:\AuToJava\CheckGenAI\target\classes;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\ASUS\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\ASUS\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ASUS\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ASUS\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ASUS\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\ASUS\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\ASUS\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\ASUS\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\ASUS\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ASUS\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\ASUS\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\ASUS\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\ASUS\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\ASUS\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\ASUS\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\ASUS\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ASUS\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\ASUS\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\ASUS\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ASUS\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\ASUS\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\ASUS\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\ASUS\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\ASUS\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ASUS"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire6590686819325841938\surefirebooter-20260402162238878_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire1893420468192426296\surefirebooter-20260403135934530_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26+35-2893"/>
@@ -62,133 +62,179 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="TC_1_verifyQLChuDePageIsDisplayed" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="7.29">
-    <system-out><![CDATA[📊 ExtentReports initialized: D:\AuToJava\CheckGenAI\target\extent-reports/TestReport_20260402_162239.html
+  <testcase name="TC_1_verifyQLChuDePageIsDisplayed" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="8.163">
+    <system-out><![CDATA[📊 ExtentReports initialized: D:\AuToJava\CheckGenAI\target\extent-reports/TestReport_20260403_135935.html
 📋 Test Suite started: Surefire test
 🚀 Starting test: TC_1_verifyQLChuDePageIsDisplayed
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Apr 02, 2026 4:22:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Apr 03, 2026 1:59:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Apr 02, 2026 4:22:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Apr 03, 2026 1:59:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 146.0.7680.165. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="TC_2_VerifyColumnQLChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.368">
+  <testcase name="TC_2_VerifyColumnQLChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.711">
     <system-out><![CDATA[✅ Test PASSED: TC_1_verifyQLChuDePageIsDisplayed
 🚀 Starting test: TC_2_VerifyColumnQLChuDe
 ]]></system-out>
   </testcase>
-  <testcase name="TC_3_VerifyAddNewTopicForm" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="4.32">
+  <testcase name="TC_3_VerifyAddNewTopicForm" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="4.407">
     <system-out><![CDATA[✅ Test PASSED: TC_2_VerifyColumnQLChuDe
 🚀 Starting test: TC_3_VerifyAddNewTopicForm
 ]]></system-out>
   </testcase>
-  <testcase name="TC_4_VerifyMaChuDeWhenInputValidData" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.136">
+  <testcase name="TC_4_VerifyMaChuDeWhenInputValidData" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.254">
     <system-out><![CDATA[✅ Test PASSED: TC_3_VerifyAddNewTopicForm
 🚀 Starting test: TC_4_VerifyMaChuDeWhenInputValidData
 ]]></system-out>
   </testcase>
-  <testcase name="TC_5_VerifyMaChuDeWhenInputInvalidData" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.291">
+  <testcase name="TC_5_VerifyMaChuDeWhenInputInvalidData" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.279">
     <system-out><![CDATA[✅ Test PASSED: TC_4_VerifyMaChuDeWhenInputValidData
 🚀 Starting test: TC_5_VerifyMaChuDeWhenInputInvalidData
 ]]></system-out>
   </testcase>
-  <testcase name="TC_6_VerifyEmptyMaChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.143">
+  <testcase name="TC_6_VerifyEmptyMaChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.174">
     <system-out><![CDATA[✅ Test PASSED: TC_5_VerifyMaChuDeWhenInputInvalidData
 🚀 Starting test: TC_6_VerifyEmptyMaChuDe
 ]]></system-out>
   </testcase>
-  <testcase name="TC_7_VerifyValidTenChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.151">
+  <testcase name="TC_7_VerifyValidTenChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.184">
     <system-out><![CDATA[✅ Test PASSED: TC_6_VerifyEmptyMaChuDe
 🚀 Starting test: TC_7_VerifyValidTenChuDe
 ]]></system-out>
   </testcase>
-  <testcase name="TC_8_VerifyInvalidTenChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.294">
+  <testcase name="TC_8_VerifyInvalidTenChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.679">
     <system-out><![CDATA[✅ Test PASSED: TC_7_VerifyValidTenChuDe
 🚀 Starting test: TC_8_VerifyInvalidTenChuDe
 ]]></system-out>
   </testcase>
-  <testcase name="TC_9_VerifyInvalidTenChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.375">
+  <testcase name="TC_9_VerifyInvalidTenChuDe" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.181">
     <system-out><![CDATA[✅ Test PASSED: TC_8_VerifyInvalidTenChuDe
 🚀 Starting test: TC_9_VerifyInvalidTenChuDe
 ]]></system-out>
   </testcase>
-  <testcase name="TC10_GetFirstTruCot" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="4.362">
+  <testcase name="TC10_GetFirstTruCot" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="4.238">
     <system-out><![CDATA[✅ Test PASSED: TC_9_VerifyInvalidTenChuDe
 🚀 Starting test: TC10_GetFirstTruCot
 ]]></system-out>
   </testcase>
-  <testcase name="TC_11_VerifyEmptyTruCot" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="4.199">
+  <testcase name="TC_11_VerifyEmptyTruCot" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="4.235">
     <system-out><![CDATA[✅ Test PASSED: TC10_GetFirstTruCot
 🚀 Starting test: TC_11_VerifyEmptyTruCot
 ]]></system-out>
   </testcase>
-  <testcase name="TC_12_VerifyMaChuDeTrung" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="12.411">
+  <testcase name="TC_12_VerifyMaChuDeTrung" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="12.461">
     <system-out><![CDATA[✅ Test PASSED: TC_11_VerifyEmptyTruCot
 🚀 Starting test: TC_12_VerifyMaChuDeTrung
-Ma Chu De da co san trong record: CD17751195
+Ma Chu De da co san trong record: CD13213S3
 ]]></system-out>
   </testcase>
-  <testcase name="TC_13_VerifyClickIconHuy" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.695">
-    <failure message="Content of confirm popup should be correct expected [Bạn có xác nhận hủy thêm mới?] but found [Sau khi xác nhận, dữ liệu đã nhập sẽ không được lưu]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Content of confirm popup should be correct expected [Bạn có xác nhận hủy thêm mới?] but found [Sau khi xác nhận, dữ liệu đã nhập sẽ không được lưu]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.autojava.checkgenai.tests.QLChuDeTest.TC_13_VerifyClickIconHuy(QLChuDeTest.java:178)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
+  <testcase name="TC_13_VerifyClickIconHuy" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="4.71">
     <system-out><![CDATA[✅ Test PASSED: TC_12_VerifyMaChuDeTrung
 🚀 Starting test: TC_13_VerifyClickIconHuy
 ]]></system-out>
   </testcase>
-  <testcase name="TC_14_VerifyHuyPopupConfirm" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="12.638">
-    <system-out><![CDATA[❌ Test FAILED: TC_13_VerifyClickIconHuy
-✅ Successfully got WebDriver from BaseTest.getDriver()
-📸 Screenshot saved: D:\AuToJava\CheckGenAI\target\screenshots\TC_13_VerifyClickIconHuy_FAIL_20260402_162337.png
-📝 Error details saved: D:\AuToJava\CheckGenAI\target\test-reports\TC_13_VerifyClickIconHuy_ERROR_20260402_162337.txt
-ℹ️ Driver is not quit automatically after test failure per config/process.
-📸 Saved screenshot to: D:\AuToJava\CheckGenAI\target\screenshots\TC_13_VerifyClickIconHuy_FAIL_20260402_162337.png
+  <testcase name="TC_14_VerifyHuyPopupConfirm" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="12.644">
+    <system-out><![CDATA[✅ Test PASSED: TC_13_VerifyClickIconHuy
 🚀 Starting test: TC_14_VerifyHuyPopupConfirm
 ]]></system-out>
   </testcase>
-  <testcase name="TC_15_VerifyXacNhanPopupConfirm" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="35.409">
+  <testcase name="TC_15_VerifyXacNhanPopupConfirm" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="35.484">
     <system-out><![CDATA[✅ Test PASSED: TC_14_VerifyHuyPopupConfirm
 🚀 Starting test: TC_15_VerifyXacNhanPopupConfirm
+]]></system-out>
+  </testcase>
+  <testcase name="TC_16_VerifyAddNewTopicSuccess" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="20.199">
+    <system-out><![CDATA[✅ Test PASSED: TC_15_VerifyXacNhanPopupConfirm
+🚀 Starting test: TC_16_VerifyAddNewTopicSuccess
+Ma Chu De trong input: CD17751996
+Ten Chu De trong input: AUTO_TEN1775199696859
+Tru Cot trong input: An toàn
+]]></system-out>
+  </testcase>
+  <testcase name="TC_17_VerifyWhenClickEdit" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.504">
+    <system-out><![CDATA[✅ Test PASSED: TC_16_VerifyAddNewTopicSuccess
+🚀 Starting test: TC_17_VerifyWhenClickEdit
+Ma Chu De trong input: CD17751996
+Ten Chu De trong input: AUTO_TEN1775199696859
+Tru Cot trong input: An toàn
+]]></system-out>
+  </testcase>
+  <testcase name="TC_18_VerifyHuyPopupConfirmWhenEdit" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="6.037">
+    <system-out><![CDATA[✅ Test PASSED: TC_17_VerifyWhenClickEdit
+🚀 Starting test: TC_18_VerifyHuyPopupConfirmWhenEdit
+]]></system-out>
+  </testcase>
+  <testcase name="TC_19_VerifyHuyPopupConfirmWhenEdit" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="12.643">
+    <system-out><![CDATA[✅ Test PASSED: TC_18_VerifyHuyPopupConfirmWhenEdit
+🚀 Starting test: TC_19_VerifyHuyPopupConfirmWhenEdit
+]]></system-out>
+  </testcase>
+  <testcase name="TC_20_VerifyXacNhanPopupConfirmWhenEdit" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="34.805">
+    <system-out><![CDATA[✅ Test PASSED: TC_19_VerifyHuyPopupConfirmWhenEdit
+🚀 Starting test: TC_20_VerifyXacNhanPopupConfirmWhenEdit
+]]></system-out>
+  </testcase>
+  <testcase name="TC_21_VerifyUpdateChuDeSuccess" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="16.985">
+    <system-out><![CDATA[✅ Test PASSED: TC_20_VerifyXacNhanPopupConfirmWhenEdit
+🚀 Starting test: TC_21_VerifyUpdateChuDeSuccess
+Ma Chu De trong input: CD17751996
+Ten Chu De trong input: AUTO_TEN1775199769879UPDATE
+Tru Cot trong input: Năng lượng và môi trường
+]]></system-out>
+  </testcase>
+  <testcase name="TC_22_VerifyToggleTrangThai" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="5.46">
+    <system-out><![CDATA[✅ Test PASSED: TC_21_VerifyUpdateChuDeSuccess
+🚀 Starting test: TC_22_VerifyToggleTrangThai
+]]></system-out>
+  </testcase>
+  <testcase name="TC_23_VerifyHuyPopupConfirmWhenToggleTrangThai" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="12.575">
+    <system-out><![CDATA[✅ Test PASSED: TC_22_VerifyToggleTrangThai
+🚀 Starting test: TC_23_VerifyHuyPopupConfirmWhenToggleTrangThai
+]]></system-out>
+  </testcase>
+  <testcase name="TC_24_VerifyXacNhanPopupConfirmWhenToggleTrangThai" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="5.285">
+    <system-out><![CDATA[✅ Test PASSED: TC_23_VerifyHuyPopupConfirmWhenToggleTrangThai
+🚀 Starting test: TC_24_VerifyXacNhanPopupConfirmWhenToggleTrangThai
+]]></system-out>
+  </testcase>
+  <testcase name="TC_25_VerifyToggleTrangThaiOFFtoON" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="3.233">
+    <system-out><![CDATA[✅ Test PASSED: TC_24_VerifyXacNhanPopupConfirmWhenToggleTrangThai
+🚀 Starting test: TC_25_VerifyToggleTrangThaiOFFtoON
+]]></system-out>
+  </testcase>
+  <testcase name="TC_26_VerifyHuyPopupConfirmWhenToggleTrangThaiOFFtoON" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="2.127">
+    <system-out><![CDATA[✅ Test PASSED: TC_25_VerifyToggleTrangThaiOFFtoON
+🚀 Starting test: TC_26_VerifyHuyPopupConfirmWhenToggleTrangThaiOFFtoON
+]]></system-out>
+  </testcase>
+  <testcase name="TC_27_VerifyXacNhanPopupConfirmWhenToggleTrangThaiOFFtoON" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="5.221">
+    <system-out><![CDATA[✅ Test PASSED: TC_26_VerifyHuyPopupConfirmWhenToggleTrangThaiOFFtoON
+🚀 Starting test: TC_27_VerifyXacNhanPopupConfirmWhenToggleTrangThaiOFFtoON
+]]></system-out>
+  </testcase>
+  <testcase name="TC_28_VerifyUpdateRecordWhenTrangThaiOFF" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="9.516">
+    <system-out><![CDATA[✅ Test PASSED: TC_27_VerifyXacNhanPopupConfirmWhenToggleTrangThaiOFFtoON
+🚀 Starting test: TC_28_VerifyUpdateRecordWhenTrangThaiOFF
+Trang Thai trong record: false
+]]></system-out>
+  </testcase>
+  <testcase name="TC_29_VerifyUpdateRecordWhenTrangThaiON" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="11.472">
+    <system-out><![CDATA[✅ Test PASSED: TC_28_VerifyUpdateRecordWhenTrangThaiOFF
+🚀 Starting test: TC_29_VerifyUpdateRecordWhenTrangThaiON
+Trang Thai trong record: true
+]]></system-out>
+  </testcase>
+  <testcase name="TC_30_VerifyToggleTrangThaiOFFInTopicList" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="5.335">
+    <system-out><![CDATA[✅ Test PASSED: TC_29_VerifyUpdateRecordWhenTrangThaiON
+🚀 Starting test: TC_30_VerifyToggleTrangThaiOFFInTopicList
+Trang Thai trong record: false
+]]></system-out>
+  </testcase>
+  <testcase name="TC_31_VerifyToggleTrangThaiONInTopicList" classname="com.autojava.checkgenai.tests.QLChuDeTest" time="7.303">
+    <system-out><![CDATA[✅ Test PASSED: TC_30_VerifyToggleTrangThaiOFFInTopicList
+🚀 Starting test: TC_31_VerifyToggleTrangThaiONInTopicList
+Trang Thai trong record: true
 ]]></system-out>
   </testcase>
 </testsuite>

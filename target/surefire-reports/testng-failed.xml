@@ -5,7 +5,7 @@
     <classes>
       <class name="com.autojava.checkgenai.tests.QLChuDeTest">
         <methods>
-          <include name="TC_13_VerifyClickIconHuy"/>
+          <include name="TC_14_VerifyHuyPopupConfirm"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="setupClass"/>

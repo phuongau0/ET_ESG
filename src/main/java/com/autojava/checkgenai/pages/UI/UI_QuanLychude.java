@@ -117,6 +117,10 @@ public WebElement selectedTruCotText;
     @FindBy(xpath="(//tbody/tr[not(contains(@class,'measure-row'))])[1]/td[3]")
   public WebElement TruCotRecord;
 
+    @FindBy(xpath="//tbody/tr[(contains(@class,'ant-table-row ant-table-row-level-0 bg-white'))][1]/td[4]/div/button")
+  public WebElement TrangThaiRecord;
+
+
 
 
   // Icon đóng popup
@@ -138,6 +142,12 @@ public WebElement MessageThemMoiChuDeThanhCong;
 @FindBy(xpath = "//span[contains(text(),'Cập nhật chủ đề thành công')]")
 public WebElement MessageCapNhatChuDeThanhCong;
 
+@FindBy(xpath = "//span[contains(text(),'Vô hiệu hóa chủ đề thành công')]")
+public WebElement MessageVoHieuHoaThanhCong;
+
+@FindBy(xpath = "//span[contains(text(),'Kích hoạt chủ đề thành công')]")
+public WebElement MessageKichHoatChuDeThanhCong;
+
   public UI_QuanLychude(WebDriver driver) {
     PageFactory.initElements(driver, this);
   }
@@ -156,6 +166,21 @@ public WebElement MessageCapNhatChuDeThanhCong;
 
   @FindBy(xpath="  //div[@role='dialog' and .//text()[contains(.,'Bạn có xác nhận')]] //button[normalize-space()='Hủy']")
   public WebElement buttonHuyPopupHuy;
+
+
+
+  @FindBy(xpath="//input[@placeholder='Tìm kiếm']")
+  public WebElement txtSearch;
+
+  @FindBy(xpath="//input[@id='_r_gc_']")
+  public WebElement filterStatus;
+
+  @FindBy(xpath = "//div[contains(text(),'Kích hoạt')]")
+  public WebElement filterStatusKichHoat;
+
+  @FindBy(xpath = "//div[contains(text(),'Vô hiệu hóa')]")
+  public WebElement filterStatusVoHieuHoa;
+
 
 
 

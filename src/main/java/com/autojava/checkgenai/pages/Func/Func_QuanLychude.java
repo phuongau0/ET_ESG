@@ -332,17 +332,34 @@ public class Func_QuanLychude {
         return truCot;
     }
 
+    public String GetTextTrangThaiRecord() {
+        String trangThai = wait.until(ExpectedConditions.visibilityOf(ui.TrangThaiRecord)).getAttribute("aria-checked")
+                .trim();
+        System.out.println("Trang Thai trong record: " + trangThai);
+        return trangThai;
+    }
+
     // Hàm verify message thêm mới chủ đề thành công
     public boolean VerifyMessageThemMoiChuDeThanhCong() {
         String message = wait.until(ExpectedConditions.visibilityOf(ui.MessageThemMoiChuDeThanhCong)).getText().trim();
         return message.contains("Thêm mới chủ đề thành công");
     }
-        // Hàm verify message thêm mới chủ đề thành công
+
+    // Hàm verify message thêm mới chủ đề thành công
     public boolean VerifyMessageCapNhatChuDeThanhCong() {
         String message = wait.until(ExpectedConditions.visibilityOf(ui.MessageCapNhatChuDeThanhCong)).getText().trim();
         return message.contains("Cập nhật chủ đề thành công");
     }
 
+    public boolean VerifyMessageVoHieuHoaThanhCong() {
+        String message = wait.until(ExpectedConditions.visibilityOf(ui.MessageVoHieuHoaThanhCong)).getText().trim();
+        return message.contains("Vô hiệu hóa chủ đề thành công");
+    }
+
+    public boolean VerifyMessageKichHoatChuDeThanhCong() {
+        String message = wait.until(ExpectedConditions.visibilityOf(ui.MessageKichHoatChuDeThanhCong)).getText().trim();
+        return message.contains("Kích hoạt chủ đề thành công");
+    }
 
     // Click icon edit theo mã chủ đề
     public void clickEditByMa(String ma) {
@@ -395,15 +412,69 @@ public class Func_QuanLychude {
         ui.buttonXacNhanPopupHuy.click();
     }
 
-    //
+    // Hàm verify popup confirm đã đóng sau khi click vào button Hủy hoặc Xác nhận
     public boolean VerifyPopupConfirmClosed() {
         try {
-            wait.until(ExpectedConditions.invisibilityOf(ui.TitlePopupHuy));
+            wait.until(ExpectedConditions.invisibilityOf(ui.ContentPopupHuy));
             return true; // Popup đã đóng
         } catch (Exception e) {
             return false; // Popup vẫn còn hiển thị
         }
 
+    }
+
+    // Hàm click vào toggle trạng thái trong form edit để tắt trạng thái
+    public void clickToogleTrangThai() throws InterruptedException {
+        wait.until(ExpectedConditions.elementToBeClickable(ui.toggleTrangThai));
+        ui.toggleTrangThai.click();
+        Thread.sleep(1000);
+    }
+
+    // Verify trạng thái của toggle trạng thái trong form edit sau khi click để tắt
+    // trạng thái
+    public String VerifyToggleTrangThai() {
+        wait.until(ExpectedConditions.visibilityOf(ui.toggleTrangThai));
+        String ariaChecked = ui.toggleTrangThai.getAttribute("aria-checked").trim();
+        return ariaChecked;
+    }
+
+    public void clickToogleTrangThaiInRecord() throws InterruptedException {
+        wait.until(ExpectedConditions.elementToBeClickable(ui.TrangThaiRecord));
+        ui.TrangThaiRecord.click();
+        Thread.sleep(1000);
+    }
+
+    public void InputSearch(String keyword) throws InterruptedException {
+        wait.until(ExpectedConditions.visibilityOf(ui.txtSearch));
+        ui.txtSearch.sendKeys(Keys.CONTROL + "a");
+        ui.txtSearch.sendKeys(Keys.DELETE);
+        ui.txtSearch.sendKeys(keyword);
+        ui.txtSearch.sendKeys(Keys.ENTER);
+        Thread.sleep(1000);
+    }
+
+    public boolean VerifySearchResultMaChuDe(String expectedMaChuDe) {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(ui.MaChuDeRecord));
+
+            String actualMaChuDe = ui.MaChuDeRecord.getText().trim();
+
+            return actualMaChuDe.equals(expectedMaChuDe);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean VerifySearchResultTenChuDe(String expectedTenChuDe) {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(ui.TenChuDeRecord));
+
+            String actualTenChuDe = ui.TenChuDeRecord.getText().trim();
+
+            return actualTenChuDe.equals(expectedTenChuDe);
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 }
