@@ -4,19 +4,20 @@
 
     <!-- Listeners for reporting and screenshots -->
     <listeners>
-        <listener class-name="com.autojava.checkgenai.listeners.TestListener"/>
-        <listener class-name="com.autojava.checkgenai.listeners.ExtentReportListener"/>
+        <listener class-name="com.autojava.checkgenai.listeners.TestListener" />
+        <listener class-name="com.autojava.checkgenai.listeners.ExtentReportListener" />
     </listeners>
 
     <!-- Parameter browser dùng chung cho tất cả test -->
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="chrome" />
 
     <test name="QL Chu De - Chrome">
         <classes>
-            <class name="com.autojava.checkgenai.tests.QLChuDeTest"/>
+            <class name="com.autojava.checkgenai.tests.QLChuDeTest" />
+            <class name="com.autojava.checkgenai.tests.QLNhomChiTieuTest" />
         </classes>
     </test>
-    
+
     <!-- Chạy cùng test trên Firefox (uncomment nếu cần) -->
     <!--
     <test name="Login Tests - Firefox">

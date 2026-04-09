@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.autojava.checkgenai.tests.QLNhomChiTieuTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.65 s -- in com.autojava.checkgenai.tests.QLNhomChiTieuTest

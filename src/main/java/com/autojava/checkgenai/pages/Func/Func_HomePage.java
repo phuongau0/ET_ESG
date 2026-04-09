@@ -35,6 +35,11 @@ public class Func_HomePage {
         ui.liQLChuDe.click();
     }
 
+      public void clickQLNhomChiTieu() {
+        wait.until(ExpectedConditions.elementToBeClickable(ui.liQLNhomChiTieu));
+        ui.liQLNhomChiTieu.click();
+    }
+
 
    
 }

@@ -533,7 +533,7 @@ public class QLChuDeTest extends BaseTest {
                 QLChuDeFunc.InputSearch(MaChuDe);
                 Thread.sleep(2000);
                 logger.info("2. Verifying the search results display the correct topic with matching code");
-                Assert.assertEquals(QLChuDeFunc.VerifySearchResultMaChuDe(MaChuDe), true       ,
+                Assert.assertEquals(QLChuDeFunc.VerifySearchResultMaChuDe(MaChuDe), true,
                                 "Mã chủ đề in search result should match search input");
 
         }
@@ -550,6 +550,51 @@ public class QLChuDeTest extends BaseTest {
                                 "Tên chủ đề in search result should match search input");
         }
 
+        @Test(priority = 34, description = "Kiem tra chuc nang TÌM KIẾM KHÔNG THẤY KẾT QUẢ")
+        public void TC_34_VerifySearchChuDeNoResult() throws InterruptedException {
+                logger.info("Starting test: TC34 : Verify searching for a topic with no matching results");
+                logger.info("1. Entering a non-existing topic code or name in the search box");
+                QLChuDeFunc.InputSearch("NonExistingTopic123");
+                Thread.sleep(2000);
+                logger.info("2. Verifying the search results display 'Không tìm thấy kết quả nào' message");
+                Assert.assertTrue(QLChuDeFunc.VerifySearchResultEmpty());
+        }
+
+        @Test(priority = 35, description = "Kiem tra khi click vao nut Export ")
+        public void TC_35_VerifyWhenClickExportButton() throws InterruptedException {
+                Thread.sleep(2000);
+                logger.info("Starting test: TC35 : Verify clicking on Export button initiates file download");
+                QLChuDeFunc.InputSearch("");
+                Thread.sleep(2000);
+                QLChuDeFunc.clickExportButton();
+                Thread.sleep(2000);
+                logger.info("1. Clicking on 'Export' button");
+                logger.info("2. Verifying file download is initiated (this can be verified by checking");
+                Assert.assertEquals(QLChuDeFunc.VerifyTitlePopupConfirm(), "Xác nhận xuất dữ liệu");
+                Assert.assertEquals(QLChuDeFunc.VerifyContentPopupConfirm(),
+                                "Bạn có muốn xuất dữ liệu này không?",
+                                "Content of confirm popup should be correct");
+        }
+
+        @Test(priority = 36, description = "Kiem tra khi click vao nut Khong trong popup confirm khi click vao nut Export")
+        public void TC_36_VerifyWhenClickNoInExportPopup() throws InterruptedException {
+                
+                Thread.sleep(2000);
+                QLChuDeFunc.clickButtonKhong();
+                Thread.sleep(2000);
+                logger.info("1. Clicking on 'Export' button");
+                logger.info("2. Clicking 'No' in the confirm popup");
+                Assert.assertTrue(QLChuDeFunc.VerifyPopupConfirmClosed(),
+                                "Confirm popup should be closed after clicking 'No'"); 
+        }
+
+
+
+
+
+        
+
+        
 
 
 }

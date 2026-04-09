@@ -17,6 +17,10 @@ public class UI_HomePage {
     @FindBy(xpath = "//li[@title='Quản lý chủ đề']")
     @CacheLookup    
     public WebElement liQLChuDe;
+
+    @FindBy(xpath = "//li[@title='Quản lý nhóm chỉ tiêu']")
+    @CacheLookup    
+    public WebElement liQLNhomChiTieu;
     
 
     public UI_HomePage(WebDriver driver) {
