@@ -22,7 +22,7 @@ public class QLNhomChiTieuTest extends BaseTest {
 
     public Func_HomePage HomeFunc;
     public Func_LoginPage LoginPageFunc;
-    // public Func_QuanLychude QLChuDeFunc;
+    public Func_QuanLychude QLChuDeFunc;
     public Func_QuanLyNhomChiTieu QLNhomChiTieuFunc;
     private static final Logger logger = LoggerFactory.getLogger(QLNhomChiTieuTest.class);
 
@@ -94,13 +94,129 @@ public class QLNhomChiTieuTest extends BaseTest {
 
     }
 
-    @Test(priority = 5 , description="Kiem tra khi nha du lieu hop le ma nhom chi tieu")
+    @Test(priority = 5, description = "Kiem tra khi nha du lieu hop le ma nhom chi tieu")
     public void TC_5_VerifyMaNhomChiTieuWhenInputValidData() throws InterruptedException {
         Thread.sleep(2000);
-                logger.info("Starting test: TC5 : Verify Ma Nhom Chi Tieu field accepts valid input");
-                logger.info("1. Entering valid Ma Nhom Chi Tieu 'KITU001' into Ma Nhom Chi Tieu field");
-                String actualMaNhomChiTieu = QLNhomChiTieuFunc.verifyMaNhomChiTieuwheninputValiddata();
-                logger.info("2. Verifying Ma Nhom Chi Tieu field accepts valid input and displays 'KITU001'");
-                Assert.assertEquals(actualMaNhomChiTieu, "KITU001", "Ma Nhom Chi Tieu should be 'KITU001'");
-        }
+        logger.info("Starting test: TC5 : Verify Ma Nhom Chi Tieu field accepts valid input");
+        logger.info("1. Entering valid Ma Nhom Chi Tieu 'KITU001' into Ma Nhom Chi Tieu field");
+        String actualMaNhomChiTieu = QLNhomChiTieuFunc.verifyMaNhomChiTieuwheninputValiddata();
+        logger.info("2. Verifying Ma Nhom Chi Tieu field accepts valid input and displays 'KITU001'");
+        Assert.assertEquals(actualMaNhomChiTieu, "KITU001", "Ma Nhom Chi Tieu should be 'KITU001'");
+    }
+
+    @Test(priority = 6, description = "Kiem tra khi nhap du lieu khong hop le ma nhom chi tieu")
+    public void TC_6_VerifyMaNhomChiTieuWhenInputInvalidData() throws InterruptedException {
+        Thread.sleep(2000);
+        logger.info("Starting test: TC6 : Verify Ma Nhom Chi Tieu field does not accept invalid input");
+        logger.info("1. Entering invalid Ma Nhom Chi Tieu 'KITU@001' into Ma Nhom Chi Tieu field");
+        String actualMaNhomChiTieu = QLNhomChiTieuFunc.verifyMaNhomChiTieuwheninputInvaliddata();
+        logger.info("2. Verifying Ma Nhom Chi Tieu field does not accept invalid input and displays 'KITUU001DAILAM'");
+        Assert.assertEquals(actualMaNhomChiTieu, "KITU001DAI", "Ma Nhom Chi Tieu should be 'KITUU001DAILAM'");
+
+    }
+
+    @Test(priority = 7, description = "Kiem tra khi khong nhap ma nhom chi tieu")
+    public void TC_7_VerifyEmptyMaNhomChiTieu() throws InterruptedException {
+        Thread.sleep(2000);
+        logger.info("Starting test: TC7 : Verify error message when Ma Nhom Chi Tieu field is empty");
+        logger.info("1. Leaving Ma Nhom Chi Tieu field empty and clicking 'Lưu' button");
+        String actualError = QLNhomChiTieuFunc.verifyEmtyMaNhomChiTieu();
+        logger.info("2. Verifying error message 'Vui lòng nhập thông tin này' is displayed");
+        Assert.assertEquals(actualError, "Vui lòng nhập thông tin này",
+                "Error message should be 'Vui lòng nhập thông tin'");
+    }
+
+    @Test(priority = 8, description = "Kiem tra khi nhap du lieu hop le ten nhom chi tieu")
+    public void TC_8_VerifyTenNhomChiTieuWhenInputValidData() throws InterruptedException {
+        Thread.sleep(2000);
+        logger.info("Starting test: TC8 : Verify Ten Nhom Chi Tieu field accepts valid input");
+        logger.info("1. Entering valid Ten Nhom Chi Tieu 'Nhóm chỉ tiêu 1' into Ten Nhom Chi Tieu field");
+        String actualTenNhomChiTieu = QLNhomChiTieuFunc.verifyTenNhomChiTieuwheninputValiddata();
+        logger.info("2. Verifying Ten Nhom Chi Tieu field accepts valid input and displays 'Nhóm chỉ tiêu 1'");
+        Assert.assertEquals(actualTenNhomChiTieu, "Tên nhóm chỉ tiêu 1",
+                "Ten Nhom Chi Tieu should be 'Nhóm chỉ tiêu 1'");
+    }
+
+    @Test(priority = 9, description = "Kiem tra khi nhap du lieu khong hop le ten nhom chi tieu")
+    public void TC_9_VerifyTenNhomChiTieuWhenInputInvalidData() throws InterruptedException {
+        Thread.sleep(2000);
+        logger.info("Starting test: TC9 : Verify Ten Nhom Chi Tieu field does not accept invalid input");
+        logger.info("1. Entering invalid Ten Nhom Chi Tieu 'Nhóm chỉ tiêu 1@' into Ten Nhom Chi Tieu field");
+        String actualTenNhomChiTieu = QLNhomChiTieuFunc.verifyTenNhomChiTieuwheninputInvaliddata();
+        logger.info(
+                "2. Verifying Ten Nhom Chi Tieu field does not accept invalid input and displays 'Nhóm chỉ tiêu 1DAILAM'");
+        Assert.assertEquals(actualTenNhomChiTieu,
+                "Quản lý dữ liệu khách hàng và tối ưu trải nghiệm người dùng trên nền tảng số nhằm nâng cao hiệu quả kinh doanh và cải thiện chất lượng dịch vụ trong hệ thống quản trị doanh nghiệp hiện đại với khả năng mở rộng linh hoạt và tích hợp đa nền tảng,  đa nền tả",
+                "Ten Nhom Chi Tieu should be 'Quản lý dữ liệu khách hàng và tối ưu trải nghiệm người dùng trên nền tảng số nhằm nâng cao hiệu quả kinh doanh và cải thiện chất lượng dịch vụ trong hệ thống quản trị doanh nghiệp hiện đại với khả năng mở rộng linh hoạt và tích hợp đa nền tảng,  đa nền tả'");
+    }
+
+    @Test(priority = 10, description = "Kiem tra khi khong nhap ten nhom chi tieu")
+    public void TC_10_VerifyEmptyTenNhomChiTieu() throws InterruptedException {
+        Thread.sleep(2000);
+        logger.info("Starting test: TC10 : Verify error message when Ten Nhom Chi Tieu field is empty");
+        logger.info("1. Leaving Ten Nhom Chi Tieu field empty and clicking 'Lưu' button");
+        String actualError = QLNhomChiTieuFunc.verifyEmtyTenNhomChiTieu();
+        logger.info("2. Verifying error message 'Vui lòng nhập thông tin này' is displayed");
+        Assert.assertEquals(actualError, "Vui lòng nhập thông tin này",
+                "Error message should be 'Vui lòng nhập thông tin này'");
+
+    }
+
+    @Test(priority = 11, description = "Kiem tra khi nhap du lieu chu de khong hop le")
+    public void TC_11_VerifyChuDeWhenInputInvalidData() throws InterruptedException {
+        Thread.sleep(2000);
+        logger.info("Starting test: TC11 : Verify error message when invalid Chu De is selected");
+        logger.info("1. Selecting invalid Chu De 'Chủ đề 1' from Chu De dropdown");
+        QLNhomChiTieuFunc.NhapChuDe("@@");
+        Assert.assertEquals(QLNhomChiTieuFunc.VerifySearchResultEmpty(), "Trống",
+                "Error message should be 'Không có dữ liệu' when selecting invalid Chu De");
+    }
+
+    @Test(priority = 12, description = "Open new tab and get topic info")
+    public void TC_12_VerifyChuDeTruCotWhenInputValid() throws InterruptedException {
+
+        String originalWindow = driver.getWindowHandle();
+        driver.switchTo().newWindow(org.openqa.selenium.WindowType.TAB);
+        driver.get("https://esg.exceltech.vn/main/master-data/topics");
+        new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10))
+                .until(org.openqa.selenium.support.ui.ExpectedConditions.urlContains("topics"));
+
+        QLChuDeFunc = new Func_QuanLychude(driver);
+        String TenChuDe = QLChuDeFunc.GetTextTenChuDeRecord();
+        String TenTruCot = QLChuDeFunc.GetTextTruCotRecord();
+
+        System.out.println(TenTruCot);
+        System.out.println(TenChuDe);
+        Thread.sleep(1000);
+
+        // Đóng tab mới, quay lại tab gốc
+        driver.close();
+        driver.switchTo().window(originalWindow);
+
+        QLNhomChiTieuFunc = new Func_QuanLyNhomChiTieu(driver);
+        // QLNhomChiTieuFunc.SwitchTab();
+
+        QLNhomChiTieuFunc.NhapChuDe(TenChuDe);
+
+        Thread.sleep(5000);
+        QLNhomChiTieuFunc.SendkeysENTER();
+        Thread.sleep(3000);
+        Assert.assertEquals(QLNhomChiTieuFunc.GetTextChuDeInput(), TenChuDe);
+        Assert.assertEquals(QLNhomChiTieuFunc.GetTextTruCotInput(), TenTruCot);
+        System.out.println("✅ Back to original tab: " + driver.getCurrentUrl());
+
+    }
+
+    @Test(priority = 13, description = "Kiem tra khi khong chon chu de nao")
+    public void TC_13_VerifyEmptyChuDe() throws InterruptedException {
+        Thread.sleep(2000);
+        logger.info("Starting test: TC13 : Verify error message when no option is selected in 'Trụ cột' select box");
+        logger.info("1. Leaving 'Chủ đề' select box with no option selected    and clicking 'Lưu' button");
+        String actualError = QLNhomChiTieuFunc.verifyEmtyTenChuDe();
+        logger.info("2. Verifying error message 'Vui lòng chọn thông tin này' is displayed");
+        Assert.assertEquals(actualError, "Vui lòng chọn thông tin này",
+                "Error message should be 'Vui lòng chọn thông tin'");
+
+    }
+
 }

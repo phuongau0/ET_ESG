@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-09T15:20:59 GMT+07:00" name="Surefire suite" finished-at="2026-04-09T15:21:21 GMT+07:00" duration-ms="22302">
+  <suite started-at="2026-04-10T15:18:44 GMT+07:00" name="Surefire suite" finished-at="2026-04-10T15:19:44 GMT+07:00" duration-ms="60168">
     <groups>
     </groups>
-    <test started-at="2026-04-09T15:20:59 GMT+07:00" name="Surefire test" finished-at="2026-04-09T15:21:21 GMT+07:00" duration-ms="22302">
+    <test started-at="2026-04-10T15:18:44 GMT+07:00" name="Surefire test" finished-at="2026-04-10T15:19:44 GMT+07:00" duration-ms="60168">
       <class name="com.autojava.checkgenai.tests.QLNhomChiTieuTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:20:59 GMT+07:00" name="setup" finished-at="2026-04-09T15:21:02 GMT+07:00" duration-ms="2888" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:18:44 GMT+07:00" name="setup" finished-at="2026-04-10T15:18:46 GMT+07:00" duration-ms="2361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:21:02 GMT+07:00" name="setupClass" finished-at="2026-04-09T15:21:02 GMT+07:00" duration-ms="286" status="PASS">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:18:46 GMT+07:00" name="setupClass" finished-at="2026-04-10T15:18:47 GMT+07:00" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method signature="TC_1_VerifyQuanLyNhomChiTieuPageDisplayed()[pri:1, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:21:02 GMT+07:00" name="TC_1_VerifyQuanLyNhomChiTieuPageDisplayed" description="Verify that the &#039;Quản lý nhóm chỉ tiêu&#039; page is displayed correctly" finished-at="2026-04-09T15:21:10 GMT+07:00" duration-ms="7316" status="PASS">
+        <test-method signature="TC_1_VerifyQuanLyNhomChiTieuPageDisplayed()[pri:1, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:18:47 GMT+07:00" name="TC_1_VerifyQuanLyNhomChiTieuPageDisplayed" description="Verify that the &#039;Quản lý nhóm chỉ tiêu&#039; page is displayed correctly" finished-at="2026-04-10T15:18:54 GMT+07:00" duration-ms="6989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_1_VerifyQuanLyNhomChiTieuPageDisplayed -->
-        <test-method signature="TC_2_VerifyColumnQLNhomChiTieu()[pri:2, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:21:10 GMT+07:00" name="TC_2_VerifyColumnQLNhomChiTieu" description="Kiem tra cac column duoc hien thi dung" finished-at="2026-04-09T15:21:12 GMT+07:00" duration-ms="2557" status="PASS">
+        <test-method signature="TC_2_VerifyColumnQLNhomChiTieu()[pri:2, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:18:54 GMT+07:00" name="TC_2_VerifyColumnQLNhomChiTieu" description="Kiem tra cac column duoc hien thi dung" finished-at="2026-04-10T15:18:56 GMT+07:00" duration-ms="2657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_2_VerifyColumnQLNhomChiTieu -->
-        <test-method signature="TC_3_VerifyAddNewNhomChiTieuForm()[pri:3, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:21:12 GMT+07:00" name="TC_3_VerifyAddNewNhomChiTieuForm" description="Kiem tra khi click vao form them moi" finished-at="2026-04-09T15:21:17 GMT+07:00" duration-ms="4412" status="PASS">
+        <test-method signature="TC_3_VerifyAddNewNhomChiTieuForm()[pri:3, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:18:56 GMT+07:00" name="TC_3_VerifyAddNewNhomChiTieuForm" description="Kiem tra khi click vao form them moi" finished-at="2026-04-10T15:19:01 GMT+07:00" duration-ms="4497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_3_VerifyAddNewNhomChiTieuForm -->
-        <test-method signature="TC_4_VerifyValidateDisabledTruCot()[pri:4, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:21:17 GMT+07:00" name="TC_4_VerifyValidateDisabledTruCot" description="Kiem tra validate disabled Tru cot" finished-at="2026-04-09T15:21:19 GMT+07:00" duration-ms="2055" status="PASS">
+        <test-method signature="TC_4_VerifyValidateDisabledTruCot()[pri:4, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:01 GMT+07:00" name="TC_4_VerifyValidateDisabledTruCot" description="Kiem tra validate disabled Tru cot" finished-at="2026-04-10T15:19:03 GMT+07:00" duration-ms="2035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_4_VerifyValidateDisabledTruCot -->
-        <test-method signature="TC_5_VerifyMaNhomChiTieuWhenInputValidData()[pri:5, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:21:19 GMT+07:00" name="TC_5_VerifyMaNhomChiTieuWhenInputValidData" description="Kiem tra khi nha du lieu hop le ma nhom chi tieu" finished-at="2026-04-09T15:21:21 GMT+07:00" duration-ms="2198" status="PASS">
+        <test-method signature="TC_5_VerifyMaNhomChiTieuWhenInputValidData()[pri:5, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:03 GMT+07:00" name="TC_5_VerifyMaNhomChiTieuWhenInputValidData" description="Kiem tra khi nha du lieu hop le ma nhom chi tieu" finished-at="2026-04-10T15:19:05 GMT+07:00" duration-ms="2168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_5_VerifyMaNhomChiTieuWhenInputValidData -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@7205765b]" started-at="2026-04-09T15:21:21 GMT+07:00" name="teardown" finished-at="2026-04-09T15:21:21 GMT+07:00" duration-ms="263" status="PASS">
+        <test-method signature="TC_6_VerifyMaNhomChiTieuWhenInputInvalidData()[pri:6, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:05 GMT+07:00" name="TC_6_VerifyMaNhomChiTieuWhenInputInvalidData" description="Kiem tra khi nhap du lieu khong hop le ma nhom chi tieu" finished-at="2026-04-10T15:19:08 GMT+07:00" duration-ms="3293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_6_VerifyMaNhomChiTieuWhenInputInvalidData -->
+        <test-method signature="TC_7_VerifyEmptyMaNhomChiTieu()[pri:7, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:08 GMT+07:00" name="TC_7_VerifyEmptyMaNhomChiTieu" description="Kiem tra khi khong nhap ma nhom chi tieu" finished-at="2026-04-10T15:19:12 GMT+07:00" duration-ms="3133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_7_VerifyEmptyMaNhomChiTieu -->
+        <test-method signature="TC_8_VerifyTenNhomChiTieuWhenInputValidData()[pri:8, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:12 GMT+07:00" name="TC_8_VerifyTenNhomChiTieuWhenInputValidData" description="Kiem tra khi nhap du lieu hop le ten nhom chi tieu" finished-at="2026-04-10T15:19:14 GMT+07:00" duration-ms="2203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_8_VerifyTenNhomChiTieuWhenInputValidData -->
+        <test-method signature="TC_9_VerifyTenNhomChiTieuWhenInputInvalidData()[pri:9, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:14 GMT+07:00" name="TC_9_VerifyTenNhomChiTieuWhenInputInvalidData" description="Kiem tra khi nhap du lieu khong hop le ten nhom chi tieu" finished-at="2026-04-10T15:19:17 GMT+07:00" duration-ms="3517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_9_VerifyTenNhomChiTieuWhenInputInvalidData -->
+        <test-method signature="TC_10_VerifyEmptyTenNhomChiTieu()[pri:10, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:17 GMT+07:00" name="TC_10_VerifyEmptyTenNhomChiTieu" description="Kiem tra khi khong nhap ten nhom chi tieu" finished-at="2026-04-10T15:19:20 GMT+07:00" duration-ms="3131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_10_VerifyEmptyTenNhomChiTieu -->
+        <test-method signature="TC_11_VerifyChuDeWhenInputInvalidData()[pri:11, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:20 GMT+07:00" name="TC_11_VerifyChuDeWhenInputInvalidData" description="Kiem tra khi nhap du lieu chu de khong hop le" finished-at="2026-04-10T15:19:23 GMT+07:00" duration-ms="2738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_11_VerifyChuDeWhenInputInvalidData -->
+        <test-method signature="TC_12_VerifyChuDeTruCotWhenInputValid()[pri:12, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:23 GMT+07:00" name="TC_12_VerifyChuDeTruCotWhenInputValid" description="Open new tab and get topic info" finished-at="2026-04-10T15:19:34 GMT+07:00" duration-ms="10503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_12_VerifyChuDeTruCotWhenInputValid -->
+        <test-method signature="TC_13_VerifyEmptyChuDe()[pri:13, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:34 GMT+07:00" name="TC_13_VerifyEmptyChuDe" description="Kiem tra khi khong chon chu de nao" finished-at="2026-04-10T15:19:38 GMT+07:00" duration-ms="4324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_13_VerifyEmptyChuDe -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.autojava.checkgenai.tests.QLNhomChiTieuTest@3f6b0be5]" started-at="2026-04-10T15:19:38 GMT+07:00" name="teardown" finished-at="2026-04-10T15:19:44 GMT+07:00" duration-ms="5941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

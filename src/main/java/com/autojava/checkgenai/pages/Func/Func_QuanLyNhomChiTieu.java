@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.autojava.checkgenai.pages.UI.UI_QuanLyNhomChiTieu;
@@ -117,6 +118,17 @@ public class Func_QuanLyNhomChiTieu {
         return ui.errorEmptyMaNhomChiTieu.getText().trim();
     }
 
+
+     public String verifyEmtyChuDe() throws InterruptedException {
+        wait.until(ExpectedConditions.visibilityOf(ui.txtChuDe));
+        ui.txtChuDe.click();
+        ui.txtChuDe.sendKeys(Keys.CONTROL + "a");
+        ui.txtChuDe.sendKeys(Keys.DELETE);
+        Thread.sleep(1000); // Đợi 1s sau khi clear để đảm bảo trạng thái ổn định
+
+        return ui.errorEmptyTenChuDe.getText().trim();
+    }
+
     // Hàm random dữ liệu cho Mã nhóm chỉ tiêu
     public void RandomMaNhomChiTieu() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(ui.txtMaNhomChiTieu));
@@ -199,7 +211,7 @@ public class Func_QuanLyNhomChiTieu {
     }
 
     // Verify nhập dữ liệu hợp lệ vào tên chủ đề
-    public String verifyTenChuDewheninputValiddata() {
+    public String verifyTenNhomChiTieuwheninputValiddata() {
         wait.until(ExpectedConditions.visibilityOf(ui.txtTenNhomChiTieu));
         ui.txtTenNhomChiTieu.clear();
         ui.txtTenNhomChiTieu.sendKeys("Tên nhóm chỉ tiêu 1");
@@ -207,7 +219,7 @@ public class Func_QuanLyNhomChiTieu {
     }
 
     // Verify nhập dữ liệu không hợp lệ vào tên chủ đề (ví dụ: quá dài)
-    public String verifyTenChuDewheninputInvaliddata() {
+    public String verifyTenNhomChiTieuwheninputInvaliddata() {
         wait.until(ExpectedConditions.visibilityOf(ui.txtTenNhomChiTieu));
         ui.txtTenNhomChiTieu.click();
         ui.txtTenNhomChiTieu.sendKeys(Keys.CONTROL + "a");
@@ -219,13 +231,13 @@ public class Func_QuanLyNhomChiTieu {
 
     // Verify để trống tên chủ đề và nhấn lưu để kiểm tra message lỗi
     public String verifyEmtyTenChuDe() throws InterruptedException {
-        wait.until(ExpectedConditions.visibilityOf(ui.txtTenNhomChiTieu));
-        ui.txtTenNhomChiTieu.click();
-        ui.txtTenNhomChiTieu.sendKeys(Keys.CONTROL + "a");
-        ui.txtTenNhomChiTieu.sendKeys(Keys.DELETE);
-        Thread.sleep(1000); // Đợi 1s sau khi clear để đảm bảo trạng thái ổn định
+        wait.until(ExpectedConditions.visibilityOf(ui.txtChuDe));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(ui.txtChuDe).perform();
+        clearText();
+        Thread.sleep(2000); // Đợi 1s sau khi clear để đảm bảo trạng thái ổn định
 
-        return ui.errorEmptyTenNhomChiTieu.getText().trim();
+        return ui.errorEmptyTenChuDe.getText().trim();
     }
 
     // // Verify để trống trụ cột và nhấn lưu để kiểm tra message lỗi
@@ -272,6 +284,19 @@ public class Func_QuanLyNhomChiTieu {
          */
         return text;
     }
+
+
+     // Verify để trống tên chủ đề và nhấn lưu để kiểm tra message lỗi
+    public String verifyEmtyTenNhomChiTieu() throws InterruptedException {
+        wait.until(ExpectedConditions.visibilityOf(ui.txtTenNhomChiTieu));
+        ui.txtTenNhomChiTieu.click();
+        ui.txtTenNhomChiTieu.sendKeys(Keys.CONTROL + "a");
+        ui.txtTenNhomChiTieu.sendKeys(Keys.DELETE);
+        Thread.sleep(1000); // Đợi 1s sau khi clear để đảm bảo trạng thái ổn định
+
+        return ui.errorEmptyTenNhomChiTieu.getText().trim();
+    }
+
 
     // Hàm lấy mã chủ đề đã tồn tại để test case mã chủ đề bị trùng khi thêm mới
     public void GetMaChuDeTrung(String maChuDe) throws InterruptedException {
@@ -332,8 +357,8 @@ public class Func_QuanLyNhomChiTieu {
 
     // Hàm lấy text của chủ đề
     public String GetTextChuDeInput() {
-        String chuDe = wait.until(ExpectedConditions.visibilityOf(ui.txtChuDe))
-                .getAttribute("value")
+        String chuDe = wait.until(ExpectedConditions.visibilityOf(ui.selectedChuDeText))
+                .getText()
                 .trim();
         System.out.println("Chu De trong input: " + chuDe);
         return chuDe;
@@ -341,7 +366,7 @@ public class Func_QuanLyNhomChiTieu {
 
     // Hàm lấy text của trụ cột đã chọn trong input để verify
     public String GetTextTruCotInput() {
-        String truCot = wait.until(ExpectedConditions.visibilityOf(ui.selectTruCot))
+        String truCot = wait.until(ExpectedConditions.visibilityOf(ui.selectedTruCotText))
                 .getText()
                 .trim();
         System.out.println("Tru Cot trong input: " + truCot);
@@ -522,14 +547,12 @@ public class Func_QuanLyNhomChiTieu {
     }
 
     // Hàm verify chức năng tìm kiếm không thấy kết quả
-    public boolean VerifySearchResultEmpty() {
-        try {
+    public String VerifySearchResultEmpty() {
+     
             wait.until(ExpectedConditions.visibilityOf(ui.emptySearchResultMessage));
             String message = ui.emptySearchResultMessage.getText().trim();
-            return message.equals("Dữ liệu trống");
-        } catch (Exception e) {
-            return false;
-        }
+            return message;
+        
     }
 
     public void clickExportButton() throws InterruptedException {
@@ -554,6 +577,26 @@ public class Func_QuanLyNhomChiTieu {
         wait.until(ExpectedConditions.elementToBeClickable(ui.optionCo));
         ui.optionCo.click();
         Thread.sleep(1000);
+    }
+
+    public void NhapChuDe(String value)
+    {
+          wait.until(ExpectedConditions.visibilityOf(ui.txtChuDe));
+        ui.txtChuDe.sendKeys(Keys.CONTROL + "a");
+        ui.txtChuDe.sendKeys(Keys.DELETE);
+        ui.txtChuDe.sendKeys(value);
+    }
+     public void SendkeysENTER()
+    {
+          wait.until(ExpectedConditions.visibilityOf(ui.txtChuDe));
+        ui.txtChuDe.sendKeys(Keys.ENTER);
+    }
+
+    public void clearText()
+    {
+        wait.until(ExpectedConditions.visibilityOf(ui.clearText));
+        ui.clearText.click();
+    
     }
 
 }

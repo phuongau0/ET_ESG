@@ -1,0 +1,69 @@
+=== TEST FAILURE REPORT ===
+Test Class: com.autojava.checkgenai.tests.QLNhomChiTieuTest
+Test Method: TC_13_VerifyEmptyTruCot
+Failure Time: Fri Apr 10 13:48:59 GMT+07:00 2026
+Test Parameters: []
+
+=== EXCEPTION DETAILS ===
+Exception Type: org.openqa.selenium.NoSuchElementException
+Exception Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='topicId'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]"}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52ba24ef5fee39e224c4cc79bd00f137, findElement {using=xpath, value=//input[@id='topicId'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49676}, goog:processID: 24552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49676/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52ba24ef5fee39e224c4cc79bd00f137
+
+=== STACK TRACE ===
+java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+com.autojava.checkgenai.pages.Func.Func_QuanLyNhomChiTieu.verifyEmtyChuDe(Func_QuanLyNhomChiTieu.java:236)
+com.autojava.checkgenai.tests.QLNhomChiTieuTest.TC_13_VerifyEmptyTruCot(QLNhomChiTieuTest.java:216)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)

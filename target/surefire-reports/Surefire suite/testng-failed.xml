@@ -6,7 +6,8 @@
       <class name="com.autojava.checkgenai.tests.QLNhomChiTieuTest">
         <methods>
           <include name="teardown"/>
-          <include name="TC_2_VerifyColumnQLChuDe"/>
+          <include name="TC_13_VerifyEmptyChuDe"/>
+          <include name="TC_12_VerifyChuDeTruCotWhenInputValid"/>
           <include name="setup"/>
           <include name="setupClass"/>
         </methods>

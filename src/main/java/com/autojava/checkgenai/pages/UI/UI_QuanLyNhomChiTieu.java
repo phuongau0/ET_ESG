@@ -75,6 +75,9 @@ public class UI_QuanLyNhomChiTieu {
     // Select trụ cột
     @FindBy(id = "pillarId")
     public WebElement selectTruCot;
+    // Text sau khi chọn trụ cột
+  @FindBy(xpath = "//input[@id='pillarId']/parent::div")
+  public WebElement selectedTruCotText;
 
     // Chú thích
     @FindBy(id = "description")
@@ -95,6 +98,9 @@ public class UI_QuanLyNhomChiTieu {
     // Button Lưu - Enable
     @FindBy(xpath = "//button[.='Lưu' and not(@disabled)]")
     public WebElement buttonLuuEnabled;
+    // Icon clear trong select trụ cột
+  @FindBy(xpath = "//div[@class='ant-select-clear']//span[@aria-label='close-circle']//*[name()='svg']")
+  public WebElement clearText;
 
     // Message bỏ trống Mã nhóm chỉ tiêu
     @FindBy(xpath = "//input[@id='code'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]")
@@ -103,6 +109,14 @@ public class UI_QuanLyNhomChiTieu {
     // Message bỏ trống tên nhóm chỉ tiêu
     @FindBy(xpath = "//input[@id='name'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]")
     public WebElement errorEmptyTenNhomChiTieu;
+
+   // Message bỏ trống tên chủ đề
+  @FindBy(xpath = "//input[@id='topicId'] /ancestor::div[contains(@class,'ant-form-item')] //div[contains(@class,'ant-form-item-explain-error')]")
+  public WebElement errorEmptyTenChuDe;
+
+    // Text sau khi chọn chu de
+  @FindBy(xpath = "//input[@id='topicId']/parent::div")
+  public WebElement selectedChuDeText;
 
     // Record đầu tiên sau khi thêm mới thành công
     @FindBy(xpath = "(//tbody/tr[not(contains(@class,'measure-row'))])[1]/td[1]")
